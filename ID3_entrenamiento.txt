@@ -1,0 +1,298 @@
+Raíz: c4
+├── [c4 == 'x'] ──> (Evaluar c0)
+│   ├── [c0 == 'x'] ──> (Evaluar c8)
+│   │   ├── [c8 == 'x'] ──> [HOJA: positive]
+│   │   ├── [c8 == 'o'] ──> (Evaluar c6)
+│   │   │   ├── [c6 == 'x'] ──> (Evaluar c2)
+│   │   │   │   ├── [c2 == 'x'] ──> [HOJA: positive]
+│   │   │   │   ├── [c2 == 'o'] ──> (Evaluar c3)
+│   │   │   │   │   ├── [c3 == 'x'] ──> [HOJA: positive]
+│   │   │   │   │   ├── [c3 == 'o'] ──> [HOJA: negative]
+│   │   │   │   │   └── [c3 == 'b'] ──> [HOJA: negative]
+│   │   │   │   └── [c2 == 'b'] ──> [HOJA: positive]
+│   │   │   ├── [c6 == 'o'] ──> (Evaluar c7)
+│   │   │   │   ├── [c7 == 'x'] ──> (Evaluar c1)
+│   │   │   │   │   ├── [c1 == 'x'] ──> [HOJA: positive]
+│   │   │   │   │   ├── [c1 == 'o'] ──> (Evaluar c2)
+│   │   │   │   │   │   ├── [c2 == 'x'] ──> [HOJA: negative]
+│   │   │   │   │   │   ├── [c2 == 'o'] ──> [HOJA: positive]
+│   │   │   │   │   │   └── [c2 == 'b'] ──> [HOJA: negative]
+│   │   │   │   │   └── [c1 == 'b'] ──> [HOJA: negative]
+│   │   │   │   ├── [c7 == 'o'] ──> [HOJA: negative]
+│   │   │   │   └── [c7 == 'b'] ──> (Evaluar c2)
+│   │   │   │       ├── [c2 == 'x'] ──> [HOJA: positive]
+│   │   │   │       ├── [c2 == 'o'] ──> [HOJA: negative]
+│   │   │   │       └── [c2 == 'b'] ──> [HOJA: positive]
+│   │   │   └── [c6 == 'b'] ──> (Evaluar c2)
+│   │   │       ├── [c2 == 'x'] ──> [HOJA: positive]
+│   │   │       ├── [c2 == 'o'] ──> (Evaluar c5)
+│   │   │       │   ├── [c5 == 'x'] ──> [HOJA: positive]
+│   │   │       │   ├── [c5 == 'o'] ──> [HOJA: negative]
+│   │   │       │   └── [c5 == 'b'] ──> [HOJA: positive]
+│   │   │       └── [c2 == 'b'] ──> [HOJA: positive]
+│   │   └── [c8 == 'b'] ──> [HOJA: positive]
+│   ├── [c0 == 'o'] ──> (Evaluar c8)
+│   │   ├── [c8 == 'x'] ──> (Evaluar c2)
+│   │   │   ├── [c2 == 'x'] ──> (Evaluar c6)
+│   │   │   │   ├── [c6 == 'x'] ──> [HOJA: positive]
+│   │   │   │   ├── [c6 == 'o'] ──> (Evaluar c5)
+│   │   │   │   │   ├── [c5 == 'x'] ──> [HOJA: positive]
+│   │   │   │   │   ├── [c5 == 'o'] ──> [HOJA: negative]
+│   │   │   │   │   └── [c5 == 'b'] ──> [HOJA: negative]
+│   │   │   │   └── [c6 == 'b'] ──> [HOJA: positive]
+│   │   │   ├── [c2 == 'o'] ──> (Evaluar c1)
+│   │   │   │   ├── [c1 == 'x'] ──> (Evaluar c7)
+│   │   │   │   │   ├── [c7 == 'x'] ──> [HOJA: positive]
+│   │   │   │   │   ├── [c7 == 'o'] ──> (Evaluar c5)
+│   │   │   │   │   │   ├── [c5 == 'x'] ──> [HOJA: positive]
+│   │   │   │   │   │   ├── [c5 == 'o'] ──> [HOJA: negative]
+│   │   │   │   │   │   └── [c5 == 'b'] ──> [HOJA: negative]
+│   │   │   │   │   └── [c7 == 'b'] ──> [HOJA: negative]
+│   │   │   │   ├── [c1 == 'o'] ──> [HOJA: negative]
+│   │   │   │   └── [c1 == 'b'] ──> (Evaluar c3)
+│   │   │   │       ├── [c3 == 'x'] ──> [HOJA: positive]
+│   │   │   │       ├── [c3 == 'o'] ──> (Evaluar c5)
+│   │   │   │       │   ├── [c5 == 'x'] ──> [HOJA: negative]
+│   │   │   │       │   ├── [c5 == 'o'] ──> [HOJA: negative]
+│   │   │   │       │   └── [c5 == 'b'] ──> [HOJA: positive]
+│   │   │   │       └── [c3 == 'b'] ──> [HOJA: positive]
+│   │   │   └── [c2 == 'b'] ──> (Evaluar c5)
+│   │   │       ├── [c5 == 'x'] ──> (Evaluar c3)
+│   │   │       │   ├── [c3 == 'x'] ──> [HOJA: positive]
+│   │   │       │   ├── [c3 == 'o'] ──> [HOJA: negative]
+│   │   │       │   └── [c3 == 'b'] ──> [HOJA: negative]
+│   │   │       ├── [c5 == 'o'] ──> [HOJA: positive]
+│   │   │       └── [c5 == 'b'] ──> [HOJA: negative]
+│   │   ├── [c8 == 'o'] ──> (Evaluar c2)
+│   │   │   ├── [c2 == 'x'] ──> (Evaluar c6)
+│   │   │   │   ├── [c6 == 'x'] ──> [HOJA: positive]
+│   │   │   │   ├── [c6 == 'o'] ──> (Evaluar c3)
+│   │   │   │   │   ├── [c3 == 'x'] ──> [HOJA: positive]
+│   │   │   │   │   ├── [c3 == 'o'] ──> [HOJA: negative]
+│   │   │   │   │   └── [c3 == 'b'] ──> [HOJA: positive]
+│   │   │   │   └── [c6 == 'b'] ──> [HOJA: positive]
+│   │   │   ├── [c2 == 'o'] ──> (Evaluar c1)
+│   │   │   │   ├── [c1 == 'x'] ──> (Evaluar c5)
+│   │   │   │   │   ├── [c5 == 'x'] ──> [HOJA: positive]
+│   │   │   │   │   ├── [c5 == 'o'] ──> [HOJA: negative]
+│   │   │   │   │   └── [c5 == 'b'] ──> [HOJA: positive]
+│   │   │   │   ├── [c1 == 'o'] ──> [HOJA: negative]
+│   │   │   │   └── [c1 == 'b'] ──> (Evaluar c5)
+│   │   │   │       ├── [c5 == 'x'] ──> [HOJA: positive]
+│   │   │   │       ├── [c5 == 'o'] ──> [HOJA: negative]
+│   │   │   │       └── [c5 == 'b'] ──> [HOJA: positive]
+│   │   │   └── [c2 == 'b'] ──> [HOJA: positive]
+│   │   └── [c8 == 'b'] ──> (Evaluar c7)
+│   │       ├── [c7 == 'x'] ──> (Evaluar c1)
+│   │       │   ├── [c1 == 'x'] ──> [HOJA: positive]
+│   │       │   ├── [c1 == 'o'] ──> (Evaluar c2)
+│   │       │   │   ├── [c2 == 'x'] ──> (Evaluar c3)
+│   │       │   │   │   ├── [c3 == 'x'] ──> [HOJA: negative]
+│   │       │   │   │   ├── [c3 == 'o'] ──> [HOJA: negative]
+│   │       │   │   │   └── [c3 == 'b'] ──> [HOJA: positive]
+│   │       │   │   ├── [c2 == 'o'] ──> [HOJA: negative]
+│   │       │   │   └── [c2 == 'b'] ──> [HOJA: negative]
+│   │       │   └── [c1 == 'b'] ──> [HOJA: negative]
+│   │       ├── [c7 == 'o'] ──> [HOJA: positive]
+│   │       └── [c7 == 'b'] ──> (Evaluar c3)
+│   │           ├── [c3 == 'x'] ──> (Evaluar c5)
+│   │           │   ├── [c5 == 'x'] ──> [HOJA: positive]
+│   │           │   ├── [c5 == 'o'] ──> [HOJA: positive]
+│   │           │   └── [c5 == 'b'] ──> [HOJA: negative]
+│   │           ├── [c3 == 'o'] ──> (Evaluar c6)
+│   │           │   ├── [c6 == 'x'] ──> [HOJA: positive]
+│   │           │   ├── [c6 == 'o'] ──> [HOJA: negative]
+│   │           │   └── [c6 == 'b'] ──> [HOJA: negative]
+│   │           └── [c3 == 'b'] ──> [HOJA: positive]
+│   └── [c0 == 'b'] ──> (Evaluar c8)
+│       ├── [c8 == 'x'] ──> [HOJA: positive]
+│       ├── [c8 == 'o'] ──> (Evaluar c1)
+│       │   ├── [c1 == 'x'] ──> (Evaluar c7)
+│       │   │   ├── [c7 == 'x'] ──> [HOJA: positive]
+│       │   │   ├── [c7 == 'o'] ──> (Evaluar c6)
+│       │   │   │   ├── [c6 == 'x'] ──> (Evaluar c2)
+│       │   │   │   │   ├── [c2 == 'x'] ──> [HOJA: positive]
+│       │   │   │   │   ├── [c2 == 'o'] ──> [HOJA: negative]
+│       │   │   │   │   └── [c2 == 'b'] ──> [HOJA: positive]
+│       │   │   │   ├── [c6 == 'o'] ──> [HOJA: negative]
+│       │   │   │   └── [c6 == 'b'] ──> [HOJA: negative]
+│       │   │   └── [c7 == 'b'] ──> (Evaluar c3)
+│       │   │       ├── [c3 == 'x'] ──> (Evaluar c5)
+│       │   │       │   ├── [c5 == 'x'] ──> [HOJA: positive]
+│       │   │       │   ├── [c5 == 'o'] ──> [HOJA: negative]
+│       │   │       │   └── [c5 == 'b'] ──> [HOJA: negative]
+│       │   │       ├── [c3 == 'o'] ──> [HOJA: positive]
+│       │   │       └── [c3 == 'b'] ──> [HOJA: negative]
+│       │   ├── [c1 == 'o'] ──> [HOJA: positive]
+│       │   └── [c1 == 'b'] ──> (Evaluar c5)
+│       │       ├── [c5 == 'x'] ──> [HOJA: positive]
+│       │       ├── [c5 == 'o'] ──> (Evaluar c2)
+│       │       │   ├── [c2 == 'x'] ──> [HOJA: positive]
+│       │       │   ├── [c2 == 'o'] ──> [HOJA: negative]
+│       │       │   └── [c2 == 'b'] ──> [HOJA: negative]
+│       │       └── [c5 == 'b'] ──> (Evaluar c3)
+│       │           ├── [c3 == 'x'] ──> [HOJA: negative]
+│       │           ├── [c3 == 'o'] ──> [HOJA: positive]
+│       │           └── [c3 == 'b'] ──> [HOJA: positive]
+│       └── [c8 == 'b'] ──> [HOJA: positive]
+├── [c4 == 'o'] ──> (Evaluar c2)
+│   ├── [c2 == 'x'] ──> (Evaluar c8)
+│   │   ├── [c8 == 'x'] ──> (Evaluar c5)
+│   │   │   ├── [c5 == 'x'] ──> [HOJA: positive]
+│   │   │   ├── [c5 == 'o'] ──> (Evaluar c3)
+│   │   │   │   ├── [c3 == 'x'] ──> (Evaluar c0)
+│   │   │   │   │   ├── [c0 == 'x'] ──> (Evaluar c1)
+│   │   │   │   │   │   ├── [c1 == 'x'] ──> [HOJA: positive]
+│   │   │   │   │   │   ├── [c1 == 'o'] ──> [HOJA: negative]
+│   │   │   │   │   │   └── [c1 == 'b'] ──> [HOJA: negative]
+│   │   │   │   │   ├── [c0 == 'o'] ──> (Evaluar c1)
+│   │   │   │   │   │   ├── [c1 == 'x'] ──> [HOJA: negative]
+│   │   │   │   │   │   ├── [c1 == 'o'] ──> [HOJA: positive]
+│   │   │   │   │   │   └── [c1 == 'b'] ──> [HOJA: negative]
+│   │   │   │   │   └── [c0 == 'b'] ──> [HOJA: negative]
+│   │   │   │   ├── [c3 == 'o'] ──> [HOJA: negative]
+│   │   │   │   └── [c3 == 'b'] ──> (Evaluar c7)
+│   │   │   │       ├── [c7 == 'x'] ──> [HOJA: positive]
+│   │   │   │       ├── [c7 == 'o'] ──> [HOJA: negative]
+│   │   │   │       └── [c7 == 'b'] ──> [HOJA: positive]
+│   │   │   └── [c5 == 'b'] ──> (Evaluar c7)
+│   │   │       ├── [c7 == 'x'] ──> (Evaluar c1)
+│   │   │       │   ├── [c1 == 'x'] ──> [HOJA: negative]
+│   │   │       │   ├── [c1 == 'o'] ──> [HOJA: positive]
+│   │   │       │   └── [c1 == 'b'] ──> [HOJA: positive]
+│   │   │       ├── [c7 == 'o'] ──> (Evaluar c1)
+│   │   │       │   ├── [c1 == 'x'] ──> [HOJA: positive]
+│   │   │       │   ├── [c1 == 'o'] ──> [HOJA: negative]
+│   │   │       │   └── [c1 == 'b'] ──> [HOJA: negative]
+│   │   │       └── [c7 == 'b'] ──> [HOJA: positive]
+│   │   ├── [c8 == 'o'] ──> (Evaluar c0)
+│   │   │   ├── [c0 == 'x'] ──> (Evaluar c1)
+│   │   │   │   ├── [c1 == 'x'] ──> [HOJA: positive]
+│   │   │   │   ├── [c1 == 'o'] ──> (Evaluar c5)
+│   │   │   │   │   ├── [c5 == 'x'] ──> [HOJA: negative]
+│   │   │   │   │   ├── [c5 == 'o'] ──> [HOJA: negative]
+│   │   │   │   │   └── [c5 == 'b'] ──> [HOJA: positive]
+│   │   │   │   └── [c1 == 'b'] ──> (Evaluar c5)
+│   │   │   │       ├── [c5 == 'x'] ──> [HOJA: negative]
+│   │   │   │       ├── [c5 == 'o'] ──> [HOJA: negative]
+│   │   │   │       └── [c5 == 'b'] ──> [HOJA: positive]
+│   │   │   ├── [c0 == 'o'] ──> [HOJA: negative]
+│   │   │   └── [c0 == 'b'] ──> [HOJA: negative]
+│   │   └── [c8 == 'b'] ──> (Evaluar c1)
+│   │       ├── [c1 == 'x'] ──> (Evaluar c0)
+│   │       │   ├── [c0 == 'x'] ──> [HOJA: positive]
+│   │       │   ├── [c0 == 'o'] ──> [HOJA: negative]
+│   │       │   └── [c0 == 'b'] ──> [HOJA: negative]
+│   │       ├── [c1 == 'o'] ──> [HOJA: negative]
+│   │       └── [c1 == 'b'] ──> (Evaluar c3)
+│   │           ├── [c3 == 'x'] ──> [HOJA: positive]
+│   │           ├── [c3 == 'o'] ──> [HOJA: negative]
+│   │           └── [c3 == 'b'] ──> [HOJA: negative]
+│   ├── [c2 == 'o'] ──> (Evaluar c6)
+│   │   ├── [c6 == 'x'] ──> (Evaluar c5)
+│   │   │   ├── [c5 == 'x'] ──> (Evaluar c0)
+│   │   │   │   ├── [c0 == 'x'] ──> (Evaluar c3)
+│   │   │   │   │   ├── [c3 == 'x'] ──> [HOJA: positive]
+│   │   │   │   │   ├── [c3 == 'o'] ──> (Evaluar c1)
+│   │   │   │   │   │   ├── [c1 == 'x'] ──> [HOJA: negative]
+│   │   │   │   │   │   ├── [c1 == 'o'] ──> [HOJA: positive]
+│   │   │   │   │   │   └── [c1 == 'b'] ──> [HOJA: negative]
+│   │   │   │   │   └── [c3 == 'b'] ──> [HOJA: negative]
+│   │   │   │   ├── [c0 == 'o'] ──> (Evaluar c1)
+│   │   │   │   │   ├── [c1 == 'x'] ──> [HOJA: negative]
+│   │   │   │   │   ├── [c1 == 'o'] ──> [HOJA: negative]
+│   │   │   │   │   └── [c1 == 'b'] ──> (Evaluar c3)
+│   │   │   │   │       ├── [c3 == 'x'] ──> [HOJA: negative]
+│   │   │   │   │       ├── [c3 == 'o'] ──> [HOJA: negative]
+│   │   │   │   │       └── [c3 == 'b'] ──> [HOJA: positive]
+│   │   │   │   └── [c0 == 'b'] ──> [HOJA: negative]
+│   │   │   ├── [c5 == 'o'] ──> (Evaluar c8)
+│   │   │   │   ├── [c8 == 'x'] ──> [HOJA: positive]
+│   │   │   │   ├── [c8 == 'o'] ──> [HOJA: negative]
+│   │   │   │   └── [c8 == 'b'] ──> (Evaluar c3)
+│   │   │   │       ├── [c3 == 'x'] ──> [HOJA: positive]
+│   │   │   │       ├── [c3 == 'o'] ──> [HOJA: negative]
+│   │   │   │       └── [c3 == 'b'] ──> [HOJA: positive]
+│   │   │   └── [c5 == 'b'] ──> [HOJA: positive]
+│   │   ├── [c6 == 'o'] ──> [HOJA: negative]
+│   │   └── [c6 == 'b'] ──> [HOJA: negative]
+│   └── [c2 == 'b'] ──> (Evaluar c6)
+│       ├── [c6 == 'x'] ──> (Evaluar c1)
+│       │   ├── [c1 == 'x'] ──> (Evaluar c8)
+│       │   │   ├── [c8 == 'x'] ──> (Evaluar c0)
+│       │   │   │   ├── [c0 == 'x'] ──> [HOJA: negative]
+│       │   │   │   ├── [c0 == 'o'] ──> [HOJA: positive]
+│       │   │   │   └── [c0 == 'b'] ──> [HOJA: negative]
+│       │   │   ├── [c8 == 'o'] ──> [HOJA: negative]
+│       │   │   └── [c8 == 'b'] ──> (Evaluar c3)
+│       │   │       ├── [c3 == 'x'] ──> [HOJA: positive]
+│       │   │       ├── [c3 == 'o'] ──> [HOJA: negative]
+│       │   │       └── [c3 == 'b'] ──> [HOJA: negative]
+│       │   ├── [c1 == 'o'] ──> (Evaluar c7)
+│       │   │   ├── [c7 == 'x'] ──> (Evaluar c0)
+│       │   │   │   ├── [c0 == 'x'] ──> [HOJA: positive]
+│       │   │   │   ├── [c0 == 'o'] ──> [HOJA: negative]
+│       │   │   │   └── [c0 == 'b'] ──> [HOJA: positive]
+│       │   │   ├── [c7 == 'o'] ──> [HOJA: negative]
+│       │   │   └── [c7 == 'b'] ──> [HOJA: positive]
+│       │   └── [c1 == 'b'] ──> (Evaluar c3)
+│       │       ├── [c3 == 'x'] ──> [HOJA: positive]
+│       │       ├── [c3 == 'o'] ──> (Evaluar c0)
+│       │       │   ├── [c0 == 'x'] ──> [HOJA: negative]
+│       │       │   ├── [c0 == 'o'] ──> [HOJA: positive]
+│       │       │   └── [c0 == 'b'] ──> [HOJA: positive]
+│       │       └── [c3 == 'b'] ──> (Evaluar c5)
+│       │           ├── [c5 == 'x'] ──> [HOJA: negative]
+│       │           ├── [c5 == 'o'] ──> [HOJA: positive]
+│       │           └── [c5 == 'b'] ──> [HOJA: positive]
+│       ├── [c6 == 'o'] ──> [HOJA: negative]
+│       └── [c6 == 'b'] ──> [HOJA: negative]
+└── [c4 == 'b'] ──> (Evaluar c6)
+    ├── [c6 == 'x'] ──> (Evaluar c2)
+    │   ├── [c2 == 'x'] ──> [HOJA: positive]
+    │   ├── [c2 == 'o'] ──> (Evaluar c8)
+    │   │   ├── [c8 == 'x'] ──> (Evaluar c7)
+    │   │   │   ├── [c7 == 'x'] ──> [HOJA: positive]
+    │   │   │   ├── [c7 == 'o'] ──> (Evaluar c0)
+    │   │   │   │   ├── [c0 == 'x'] ──> [HOJA: positive]
+    │   │   │   │   ├── [c0 == 'o'] ──> [HOJA: negative]
+    │   │   │   │   └── [c0 == 'b'] ──> [HOJA: positive]
+    │   │   │   └── [c7 == 'b'] ──> (Evaluar c0)
+    │   │   │       ├── [c0 == 'x'] ──> [HOJA: positive]
+    │   │   │       ├── [c0 == 'o'] ──> [HOJA: negative]
+    │   │   │       └── [c0 == 'b'] ──> [HOJA: negative]
+    │   │   ├── [c8 == 'o'] ──> (Evaluar c5)
+    │   │   │   ├── [c5 == 'x'] ──> [HOJA: positive]
+    │   │   │   ├── [c5 == 'o'] ──> [HOJA: negative]
+    │   │   │   └── [c5 == 'b'] ──> [HOJA: positive]
+    │   │   └── [c8 == 'b'] ──> (Evaluar c0)
+    │   │       ├── [c0 == 'x'] ──> [HOJA: positive]
+    │   │       ├── [c0 == 'o'] ──> [HOJA: negative]
+    │   │       └── [c0 == 'b'] ──> [HOJA: positive]
+    │   └── [c2 == 'b'] ──> [HOJA: positive]
+    ├── [c6 == 'o'] ──> (Evaluar c2)
+    │   ├── [c2 == 'x'] ──> (Evaluar c0)
+    │   │   ├── [c0 == 'x'] ──> (Evaluar c1)
+    │   │   │   ├── [c1 == 'x'] ──> [HOJA: positive]
+    │   │   │   ├── [c1 == 'o'] ──> [HOJA: positive]
+    │   │   │   └── [c1 == 'b'] ──> (Evaluar c3)
+    │   │   │       ├── [c3 == 'x'] ──> [HOJA: negative]
+    │   │   │       ├── [c3 == 'o'] ──> [HOJA: positive]
+    │   │   │       └── [c3 == 'b'] ──> [HOJA: negative]
+    │   │   ├── [c0 == 'o'] ──> (Evaluar c3)
+    │   │   │   ├── [c3 == 'x'] ──> (Evaluar c1)
+    │   │   │   │   ├── [c1 == 'x'] ──> [HOJA: negative]
+    │   │   │   │   ├── [c1 == 'o'] ──> [HOJA: positive]
+    │   │   │   │   └── [c1 == 'b'] ──> [HOJA: positive]
+    │   │   │   ├── [c3 == 'o'] ──> [HOJA: negative]
+    │   │   │   └── [c3 == 'b'] ──> [HOJA: positive]
+    │   │   └── [c0 == 'b'] ──> (Evaluar c8)
+    │   │       ├── [c8 == 'x'] ──> [HOJA: positive]
+    │   │       ├── [c8 == 'o'] ──> [HOJA: negative]
+    │   │       └── [c8 == 'b'] ──> [HOJA: negative]
+    │   ├── [c2 == 'o'] ──> [HOJA: negative]
+    │   └── [c2 == 'b'] ──> [HOJA: negative]
+    └── [c6 == 'b'] ──> (Evaluar c2)
+        ├── [c2 == 'x'] ──> [HOJA: positive]
+        ├── [c2 == 'o'] ──> [HOJA: negative]
+        └── [c2 == 'b'] ──> [HOJA: positive]
